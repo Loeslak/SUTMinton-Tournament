@@ -1,0 +1,38 @@
+<div class="flex flex-col px-40 mt-10">
+    @if(isEdit){
+        <h1>Update Membership</h1>
+    }@else{
+        <h1>Add New Membership</h1>
+    }
+    <form action="" class="shadow-sm w-96 p-4">
+        <div class="flex flex-wrap">
+            <div class="w-full" >
+                <mat-form-field>
+                    <mat-label>Tier</mat-label>
+                    <input matInput type="text" [(ngModel)]="tier" name="tier"/>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Duration</mat-label>
+                    <input matInput type="number" [(ngModel)]="duration" name="duration">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Price</mat-label>
+                    <input matInput type="text" [(ngModel)]="price" name="price">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>TourFee</mat-label>
+                    <input matInput type="text" [(ngModel)]="tourFee" name="tourFee">
+                </mat-form-field>
+            </div>
+            @if(isEdit){
+                <div class="w-full flex justify-center">
+                    <button mat-raised-button color="primary" (click)="update()">Update</button>
+                </div>
+            }@else{
+                <div class="w-full flex justify-center">
+                    <button mat-raised-button color="primary" [disabled]="!tier || !duration || !price || !tourFee" (click)="add()">Add</button>
+                </div>
+            }
+        </div>
+    </form>
+</div>

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    height: 100vh;
+    color: #FFFF;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #5756BB;
+}
+.logo{
+    padding-top: 36px;
+    padding-bottom: 72px;
+    justify-items: center;
+}
+.menu{
+    position: relative;
+    list-style: none;
+}
+.menu li{
+    padding: 12px;
+    margin: 12px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active{
+    background: #E0E0E058;
+}
+.menu a{
+    color: #FFFF;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+i{
+    font-size: 24px;
+}

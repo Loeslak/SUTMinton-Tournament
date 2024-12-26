@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SidebarOrganComponent } from "../sidebar-organ/sidebar-organ.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [SidebarOrganComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

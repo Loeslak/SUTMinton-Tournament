@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { MembershipsComponent } from './components/manage/memberships/memberships.component';
 import { MembershipFormComponent } from './components/manage/membership-form/membership-form.component';
+import { SidebarOrganComponent } from './components/sidebar-organ/sidebar-organ.component';
 
 export const routes: Routes = [
     {
@@ -19,5 +20,9 @@ export const routes: Routes = [
     {
         path:"admin/memberships/:id",
         component:MembershipFormComponent,
+    },
+    {
+        path:"sidebarOrgan",
+        component:SidebarOrganComponent,
     },
 ];

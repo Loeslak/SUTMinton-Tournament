@@ -20,7 +20,7 @@ async function connectDb() {
 }
 connectDb().catch((error)=>{
     console.error(err);
-})
+});
 app.listen(port,()=>{
     console.log("Server running on port",port);
 });

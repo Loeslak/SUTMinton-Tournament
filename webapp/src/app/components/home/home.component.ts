@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarOrganComponent } from "../sidebar-organ/sidebar-organ.component";
+import { SidebarOrganComponent } from "../organize/sidebar-organ/sidebar-organ.component";
 
 @Component({
   selector: 'app-home',
